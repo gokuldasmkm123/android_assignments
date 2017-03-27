@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfeafa"
+    android:padding="15dp" tools:context=".MainActivity"
+    android:id="@+id/aa">
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Log In"
+        android:textColor="#ffffff"
+        android:id="@+id/og_btn"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/pwd"
+        android:background="@drawable/btn"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:hint="Email Address or Phone Number"
+        android:id="@+id/eami_id"
+        android:background="@drawable/box"
+        android:textColor="#000000"
+        android:layout_marginTop="44dp"
+        android:paddingLeft="5dp"
+        android:layout_alignEnd="@+id/og_btn"
+        android:layout_alignStart="@+id/og_btn"
+        />
+
+    <EditText
+        android:layout_width="120dp"
+        android:padding="5dp"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/pwd"
+        android:textColor="#000000"
+
+        android:background="@drawable/box"
+        android:layout_below="@+id/eami_id"
+        android:layout_alignStart="@+id/eami_id"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#ab0021"
+        android:textColor="#ffffff"
+        android:visibility="invisible"
+        android:layout_height="40dp"
+        android:id="@+id/msg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:id="@+id/newacc"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/lbtn"
+        android:layout_below="@+id/og_btn"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgotten Password?  Help Center"
+        android:id="@+id/FF"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/newacc"
+        android:textColor="#97a3ba"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="0dp"
+        android:id="@+id/tablelayout"
+        android:gravity="center"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/FF">
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"
+                android:text="English(UK)"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="മലയാളം"/> ்ಕನ್ನಡहिन्दीاردوবাংলাతెలుగు
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"
+                android:text="हिंदी"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"
+                android:text="ಕನ್ನಡ"></TextView>
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"
+                android:text="български"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"
+                android:text="عربى"/>
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"
+                android:text="Inglês"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/add"
+                android:gravity="center"
+                />
+        </TableRow>
+
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="0dp"
+        android:layout_column="1"
+        android:background="#ffffff"
+        android:text="Facebook Â©2016"
+        android:id="@+id/textView"
+        android:layout_below="@+id/tablelayout"/>
+
+</RelativeLayout>
